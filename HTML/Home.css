@@ -1,0 +1,38 @@
+
+    .Mydiv1{
+
+        text-align: center;
+ 
+    }
+
+    .btn1{
+
+        border: 2px;
+        background: white;
+        padding:25px 45px;
+        font-size: 15px;
+        margin: center;
+        cursor: pointer;
+        transition: 3s;
+
+    }
+
+    .btn1{
+
+        color: rgb(0, 0, 0);
+
+    }
+
+    .btn1:hover{
+
+        color: green;
+        
+    }
+
+
+
+    
+
+    
+    
+    
