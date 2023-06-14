@@ -1,112 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    
-
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-size: cover;
+    background-position: center;
 }
 
-nav{
-    background: #fc7200;
-    height: 80px;
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;
+}
+
+/* HEADER */
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
     width: 100%;
-    position: fixed;
-    box-shadow:0 20px 35px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
+.navbar .logo a{
+    font-size: 1.5rem;
     font-weight: bold;
-    position: fixed;
 }
 
-nav ul{
-    float: right;
-    margin-right: 20px;
-    
-}
-nav li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    
+.navbar .links{
+    display: flex;
+    gap: 2rem;
 }
 
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.active,a:hover{
-    background: #dd6400;
-    transition: .20s;
-
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
     cursor: pointer;
-    display:none;
-}
-
-#check{
     display: none;
 }
 
-@media (max-width: 952px) {
-    label:logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
+.action_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100px;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: 0;
-        text-align: center;
-    }
-    nav ul li{
-        display: block;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #dd6400;
-    }
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
 }
 
-
+.action_btn:active{
+    scale: 0.95;
+}
 
 
 
