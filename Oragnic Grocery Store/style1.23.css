@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #dfe9f5;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #fc7200;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.2s;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+  position: fixed; 
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span{
+  font-weight: bold;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.material-symbols-outlined{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover{
+  background: #dd6400;
+}
+
+nav:hover{
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.content{
+  margin-left: 92px;
+}
+
+
+
+
+
+
+
+.order_btn{
+  align-items: center;
+  float: right;
+}
+
+.btn-center{
+  align-items: center;
+}
+
+.order_btn:hover{
+  color: #fc7200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: poppins;
+  margin: 0;
+  display: grid;
+  font-size: 14px;
+}
+
+
+.footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color: #25242a;
+}
+
+.footer >*{
+  flex: 1 100%;
+
+}
+
+
+.left-area{
+  margin-right: -12em;
+
+}
+
+
+
+.footer-bottom img{
+  width: 15%;
+}
+
+h2{
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fc7200;
+  letter-spacing: 3px;
+}
+
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li{
+  line-height: 2em;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.right-area{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.right-area > *{
+ flex: 1 50%;
+ margin-right: 1.25em; 
+}
+
+.box a{
+  color: #999;
+}
+
+.footer-bottom{
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+}
+
+.left-area p{
+  padding-right: 20%;
+  color: #999;
+}
+
+.socials{
+  margin-top: 2.2em;
+}
+
+
+.socials a{
+  background: darkorange;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.socials a i{
+  color: #e7f2f4;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+.btn{
+  border: none;
+  background: darkorange;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.search-box input{
+  height: 36px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .right-area > *{
+      flex:1
+  }
+  .left-area{
+      flex: 1 0px;
+  }
+  .right-area{
+      flex: 2 0px;
+  }  
+}
+
+
+@media screen and (max-width:600px) {
+  .footer{
+      padding: 15px;
+  }
+  .main{
+      font-size: 55px;
+  }
+  
+}
