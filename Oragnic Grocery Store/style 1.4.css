@@ -258,6 +258,14 @@ a.active,a:hover{
 }
 
 
+.cvv-input{
+    cursor: not-allowed;
+}
+
+.card-number-input{
+    cursor: not-allowed;
+}
+
 
 
 
