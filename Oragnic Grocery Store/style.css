@@ -10,7 +10,7 @@
 body{
     height: 100vh;
     background-color: #000;
-    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-image: url('BeFunky-design (3).png');
     background-size: cover;
     background-position: center;
 }
@@ -44,6 +44,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #dfdfdf;
 }
 
 .navbar .logo a{
@@ -84,7 +85,62 @@ header{
     scale: 0.95;
 }
 
+/*Dropdown Menu*/
 
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(225,225,225,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+.dropdown_menu open{
+    height: 240px;
+
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Responsive Design*/
+
+@media(max-width: 992px) {
+    .navbar links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
 
 
 
