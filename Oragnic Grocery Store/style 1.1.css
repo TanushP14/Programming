@@ -115,14 +115,14 @@ main.table{
 
     overflow: hidden;
    
-    margin-top: 90px;
+    margin-top: 10px;
 }
 
 
 .table__header{
     width: 100%;
     
-    background-color: #fff5;
+   
     padding: .8rem 1rem;
 }
 
