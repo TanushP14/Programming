@@ -121,6 +121,26 @@ header{
 
 }
 
+
+.body_content {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    background-color: #6EC531;
+    border-radius: 10px;
+    border: #fc7200;
+    border-width: 10px;
+}
+
+.body_content h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font: 500;
+    
+}
+
+
 .dropdown_menu li {
     padding: 0.7rem;
     display: flex;

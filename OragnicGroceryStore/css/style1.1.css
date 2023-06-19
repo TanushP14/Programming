@@ -51,54 +51,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
-}
-
-body{
-    min-width: 100vh;
-    
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
 .maintable{
     margin-left: auto;
     margin-right: auto;

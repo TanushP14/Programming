@@ -92,6 +92,24 @@ nav:hover{
 
 
 
+.body_content {
+  margin-top: 2%;
+  margin-left: 100px;
+  margin-right: 2%;
+  padding: 2%;
+  background-color: #a6d484;
+  border-radius: 10px;
+  border: #fc7200;
+  border-width: 10px;
+}
+
+.body_content h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font: 500;
+  
+}
+
 
 
 
