@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style1.23.css">
+    <link rel="stylesheet" href="../css/style1.23.css">
+    <link rel="stylesheet" href="../css/orderHistorytabel.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="shortcut icon" href="Screenshot_2023-05-15_155015-removebg-preview.png" type="image/x-icon">
-    <script src="indexjs.js"></script>
+    <link rel="shortcut icon" href="../img/main-logo.png" type="image/x-icon">
+    <script src="../js/index.js"></script>
 
     
         
@@ -18,62 +19,136 @@
         <ul>
             <li>
                 <a href="#" class="logo">
-                    <img src="Screenshot_2023-05-15_155015-removebg-preview.png" alt="">
+                    <img src="../img/main-logo.png" alt="">
                     <span class="nav-item">Dashboard</span>
                 </a>
             </li>
-            <li><a href="home1.html" >
-                <span class="material-symbols-outlined">
-                    home
+            <li><a href="../user-home1.html">
+                    <span class="material-symbols-outlined">
+                        home
                     </span>
-                <span class="nav-item">Home</span>
-            </a></li>
-            <li><a href="profile1.html">
-                <span class="material-symbols-outlined">
-                    manage_accounts
+                    <span class="nav-item"> <i class="fa-solid fa-house"></i>Home</span>
+                </a></li>
+            <li><a href="../profile.html">
+                    <span class="material-symbols-outlined">
+                        manage_accounts
                     </span>
-                <span class="nav-item">Profile</span>
-            </a></li>
-            <li><a href="order1.html">
-                <span class="material-symbols-outlined">order_approve</span>
-                <span class="nav-item">Order</span>
-            </a></li>
-            <li><a href="order history1.html" class="active">
-                <span class="material-symbols-outlined">
-                    history
+                    <span class="nav-item">Profile</span>
+                </a></li>
+            <li><a href="order.html" class="active">
+                    <span class="material-symbols-outlined">order_approve</span>
+                    <span class="nav-item">Order</span>
+                </a></li>
+            <li><a href="order-history1.html">
+                    <span class="material-symbols-outlined">
+                        history
                     </span>
-                <span class="nav-item">History</span>
-            </a></li>
-            <li><a href="setting1.html">
-                <span class="material-symbols-outlined">
-                    settings
+                    <span class="nav-item">History</span>
+                </a></li>
+            <li><a href="../setting.html">
+                    <span class="material-symbols-outlined">
+                        settings
                     </span>
-                <span class="nav-item">Setting</span>
-            </a></li>
-            <li><a href="Home.html" class="logout">
-                <span class="material-symbols-outlined">
-                    logout
+                    <span class="nav-item">Setting</span>
+                </a></li>
+            <li><a href="../index.html" class="logout">
+                    <span class="material-symbols-outlined">
+                        logout
                     </span>
-                <span class="nav-item">Log out</span>
-            </a></li>
+                    <span class="nav-item">Log out</span>
+                </a></li>
         </ul>
     </nav>
 
 
 
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur possimus vel cum quaerat omnis, quisquam culpa velit similique illo voluptatum odio nam perferendis consequuntur explicabo tempora voluptate libero unde nulla?</p>
+        <h1 class="pageHeader">Order History</h1>
+    
+
+    <div class="maintable">
+        <main class="table">
+            <section class="table__header"></section>
+            <center>
+                <h1>Order History</h1>
+            </center>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> Customer </th>
+                            <th> Location </th>
+                            <th> Order Date </th>
+                            <th> Status </th>
+                            <th> Amount </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 10023 </td>
+                            <td> <img
+                                    src="https://th.bing.com/th/id/OIP.d80cum7owIU8OeE1vw4KQwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=2.5&pid=1.7"
+                                    alt=""> Tanush Pal </td>
+                            <td> Gyankhand-3, Ind, Gzb, 201014, India </td>
+                            <td> 1/5/2023</td>
+                            <td>
+                                <p class="status shiped">Shiped
+
+                                </p>
+                            </td>
+                            <td> ₹ 500.00</td>
+                        </tr>
+                        <tr>
+                            <td> 10024 </td>
+                            <td> <img
+                                    src="https://th.bing.com/th/id/OIP.d80cum7owIU8OeE1vw4KQwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=2.5&pid=1.7"
+                                    alt=""> Tanush Pal </td>
+                            <td> Gyankhand-3, Ind, Gzb, 201014, India </td>
+                            <td> 1/5/2023</td>
+                            <td>
+                                <p class="status packed"> Packed
+
+                                </p>
+                            </td>
+                            <td> ₹ 200.00</td>
+                        </tr>
+                        <tr>
+                            <td> 10025 </td>
+                            <td> <img
+                                    src="https://th.bing.com/th/id/OIP.d80cum7owIU8OeE1vw4KQwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=2.5&pid=1.7"
+                                    alt=""> Tanush Pal </td>
+                            <td> Gyankhand-3, Ind, Gzb, 201014, India </td>
+                            <td> 1/5/2023</td>
+                            <td>
+                                <p class="status delivered">Delivered
+
+                                </p>
+                            </td>
+                            <td> ₹ 1200.00</td>
+                        </tr>
+
+                        <tr>
+                            <td> 10026 </td>
+                            <td> <img
+                                    src="https://th.bing.com/th/id/OIP.d80cum7owIU8OeE1vw4KQwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=2.5&pid=1.7"
+                                    alt=""> Tanush Pal </td>
+                            <td> Gyankhand-3, Ind, Gzb, 201014, India </td>
+                            <td> 1/5/2023</td>
+                            <td>
+                                <p class="status return">Return Requested
+
+                                </p>
+                            </td>
+                            <td> ₹ 900.00</td>
+                        </tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
 
 
 

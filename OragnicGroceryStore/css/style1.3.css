@@ -86,7 +86,7 @@
 
 body{
     height: 100vh;
-    background-color: #000;
+    background-color: #eee;
     background-image: url('BeFunky-design (3).png');
     background-size: cover;
     background-position: center;
@@ -111,8 +111,7 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
-    color: #07001f;
-}
+    }
 
 .navbar{
     width: 100%;

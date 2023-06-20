@@ -14,6 +14,7 @@ body{
 }
 
 nav{
+  position: fixed;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -90,12 +91,21 @@ nav:hover{
 }
 
 
-
+.pageHeader {
+  margin-top: 15px;
+  margin-left: 100px;
+  /* margin-right: 10px; */
+  /* padding: 2%; */
+  font-weight: bold;
+  font-size: 2.2rem;
+  font: 500;
+  color: #fc7200;
+}
 
 .body_content {
   margin-top: 2%;
   margin-left: 100px;
-  margin-right: 2%;
+  margin-right: 10px;
   padding: 2%;
   background-color: #a6d484;
   border-radius: 10px;
