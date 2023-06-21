@@ -77,12 +77,7 @@
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open sans', sans-serif;
-}
+
 
 body{
     height: 100vh;
@@ -121,7 +116,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #dfdfdf;
+    color: #fff;
     color: #6EC531;
   
 }
@@ -246,6 +241,273 @@ header{
     padding: 0;
     box-sizing: inherit;
 }
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+footer{
+    
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+.footer-copyright{
+    background-color: #6EC531;
+    color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 600px;
+}
+
+
+.container form .inputBox{
+    margin-top: 20px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.container form .submit-btn{
+    width: 100%;
+    background: #00adf2;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    
+}
+
+.container form .submit-btn:hover{
+    letter-spacing: 2px;
+    
+}
+
+
+
+
+
+
+body{
+    height: 100vh;
+    background-color: #eee;
+    background-image: url('BeFunky-design (3).png');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 208, 255);
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #FF6600;
+}
+
+/* HEADER */
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    }
+
+.navbar_od{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    color: rgb(0, 208, 255);
+  
+}
+
+.navbar_od .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar_od .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_od .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: rgb(0, 208, 255);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover{
+    background-color: rgb(3, 177, 216);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/*Dropdown Menu*/
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(225,225,225,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+.dropdown_menu open{
+    height: 240px;
+
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Responsive Design*/
+
+@media(max-width: 992px) {
+    .navbar links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+.content1{
+    padding-top: 1000px;
+}
+
+
+.active{
+    color: #FF6600;
+}
+
+
 
 html{
     height: 100%;

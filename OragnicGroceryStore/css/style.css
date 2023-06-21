@@ -8,6 +8,7 @@
 }
 
 body{
+    
     height: 100vh;
     background-color: #000;
     background-image: url('BeFunky-design (3).png');
@@ -21,7 +22,7 @@ li{
 
 a{
     text-decoration: none;
-    color: #6EC531;
+    color: #62c846;
     font-size: 1rem;
 }
 
@@ -45,12 +46,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #dfdfdf;
-    color: #6EC531;
+    color: #ff0000;
+    color: #62c846;
   
 }
 
 .navbar .logo a{
+    
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -68,7 +70,7 @@ header{
 }
 
 .action_btn{
-    background-color: #6EC531;
+    background-color: #62c846;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -127,7 +129,7 @@ header{
     margin-left: 2%;
     margin-right: 2%;
     padding: 2%;
-    background-color: #6EC531;
+    background-color: #62c846;
     border-radius: 10px;
     border: #fc7200;
     border-width: 10px;
@@ -214,7 +216,8 @@ footer{
 }
 
 .footer-copyright{
-    background-color: #6EC531;
+    background-color: 
+    #62c846;
     color: #fff;
     padding: 15px;
     margin-top: 30px;
@@ -238,6 +241,99 @@ footer{
 
 
 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 
@@ -333,7 +429,7 @@ button{
     width: 90%;
     color: #fff;
     cursor: pointer;
-    background: #6EC531;
+    background: #62c846;
 }
 
 button:hover{

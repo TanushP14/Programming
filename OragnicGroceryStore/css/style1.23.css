@@ -206,3 +206,43 @@ footer{
 .footer-copyright p{
   margin-bottom: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  padding: 10px 0;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  width: 90%;
+  color: #fff;
+  cursor: pointer;
+  background: #6EC531;
+  margin-left: 270%;
+}
+
+button:hover{
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  padding: 10px 0;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  width: 90%;
+  color: #fff;
+  cursor: pointer;
+  background: #FF6600;
+}
