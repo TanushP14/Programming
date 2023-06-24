@@ -1,123 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style1.1.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
-    <title>Organic Grocery Store</title>
-    <script src="https://cdjs.cloudflare.com/ajax/libs/jquery.min.js"></script>
-
-</head>
-
-<body onload="myFunction()" >
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        setTimeout(function () {
-            $('.loader_bg').fadeToggle();
-        }, 550);
-    </script>
-
-    <div class="loader_bg">
-        <div class="loader">
-            <center>
-                <p style="color: #6EC531;">Fetching Data</p>
-            </center>
-        </div>
-    </div>
-    
-    <div>
-        <header>
-            <div class="navbar">
-                <div class="logo"><a href="#">Organic Grocery Store </a></div>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="track-order.html">Track Order</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <a href="signup.html" class="action_btn">Get Started</a>
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Organic Grocery Store</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://unpkg.com/@webpixels/css@1.0/dist/index.css" rel="stylesheet" />
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Oraganic Grocery Store™</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="about-us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="track-order.html">Track Order</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Contact Us</a></li>
+                    </ul>
+                    
+                    <a class="nav-link me-lg-3" href="signup.html">
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me"></i>
+                            <span class="small">Get Started</span>
+                        </span>
+                    </button>
+                </a>
+                
                 </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12">
 
+                       
+                        <div class="card">
+                            <div class="card-header">
+                              <h6>Order Details</h6>
+                      
+                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-nowrap">
+                              <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                  <th scope="col">Location</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Phone</th>
+                                  <th scope="col">Status</th>
+                                  
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-000-0001</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-success text-success">Delivered</span>
+                                  </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-000-0881</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-success text-success">Delivered</span>
+                                  </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-000-5601</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-warning text-warning">In transit</span>
+                                  </td>
+                            
+                                </tr>
 
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-000-02001</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-danger text-danger">Cancelled </span>
+                                  </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-000-027401</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-danger text-danger">Cancelled </span>
+                                  </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-000-02501</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-danger text-danger">Cancelled </span>
+                                  </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td data-label="Id">
+                                        <span>O-030-02001</span>
+                                      </td>
+                                    <td data-label="Name">
+                                    <img alt="..." src="img/profile.png" class="avatar avatar-sm rounded-circle me-2">
+                                    <a class="text-heading font-semibold font-weight-bold" href="#">
+                                      Tanush Pal
+                                    </a>
+                                  </td>
+                                  
+                                  <td data-label="Location">
+                                    <a class="text-current" >Gyan Khand 3, IND, GZB</a>
+                                  </td>
+                                  <td data-label="Email">
+                                    <a class="text-current" >tanush@tanush.com</a>
+                                  </td>
+                                  <td data-label="">
+                                    <a class="text-current" href="#">1234567890</a>
+                                  </td>
+                                  <td data-label="Company">
+                                    <span class="badge bg-soft-danger text-danger">Cancelled </span>
+                                  </td>
+                            
+                                </tr>
+                              
+                              </tbody>
+                            </table>
+                          </div>
+                          </div>
+                    </div>
+                   
+                </div>
             </div>
         </header>
-
-    </div>
-
-
-
-
-    <div class="maintable">
-        <main class="table">
-            <section class="table__header"></section>
-            <center>
-                <h1>Order Details</h1>
-            </center>
-            <section class="table__body">
-                <table>
-                    <thead>
-                        <tr>
-                            <th> ID </th>
-                            <th> Customer </th>
-                            <th> Location </th>
-                            <th> Order Date </th>
-                            <th> Status </th>
-                            <th> Amount </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> 10023 </td>
-                            <td> <img
-                                    src="https://th.bing.com/th/id/OIP.d80cum7owIU8OeE1vw4KQwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=2.5&pid=1.7"
-                                    alt=""> Tanush Pal </td>
-                            <td> Gyankhand-3, Ind, Gzb, 201014, India </td>
-                            <td> 1/5/2023</td>
-                            <td>
-                                <p class="status shiped">Shiped
-
-                                </p>
-                            </td>
-                            <td> ₹ 600.00</td>
-                        </tr>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-
-
-    </div>
-
-
-
-
-
-
-    </footer>
-
-
-    <footer>
-        <div class="footer-copyright">
-            <p>Copyright © 2023 Organic Grocery Store All Rights Reserved</p>
+        
+    
+       
+        
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; All Rights Reserved Oraganic Grocery Store.</div>
+                    
+                </div>
+            </div>
+        </footer>
+   
         </div>
-    </footer>
-
-
-
-</body>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
