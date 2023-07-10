@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Order Canceled</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <title>Product Card</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="alert alert-danger" role="alert">
-           <center><h2 class="alert-heading">Order Canceled</h2>
-            <p>Your order has been canceled. as per your choice</p>
-            <hr>
-            <p class="mb-0">If you have any questions or concerns, please contact our customer support.</p>
-            <a href="../order.html" ><button class="btn btn-primary mt-3">Back to Home</button></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="path/to/product-image.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Title</h5>
+            <p class="card-text">Product description goes here.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Price: $99.99</h6>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
         </div>
-        
+      </div>
+      <!-- Add more product cards here -->
     </div>
-</center>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

@@ -4512,7 +4512,7 @@ textarea.form-control-lg {
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: #e9ecef;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(41, 55, 240, 0.25);
+  /* --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(41, 55, 240, 0.25); */
   --bs-pagination-active-color: #fff;
   --bs-pagination-active-bg: #2937f0;
   --bs-pagination-active-border-color: #2937f0;
@@ -11279,3 +11279,5 @@ Sign up
 	box-shadow: #0dcaf0;
 	border-radius: 100%;
 }
+
+
